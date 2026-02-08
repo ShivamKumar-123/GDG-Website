@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - GDG NEHU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Background Particles -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Cursor Trail Effect -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="nav-section">
+            <div class="logo-container">
+                <div class="logo-3d-wrapper">
+                    <div class="logo-3d">
+                        <img src="./image/gdcLogo.png" alt="GDG NEHU Logo" class="logo-img">
+                        <div class="logo-particles"></div>
+                        <div class="logo-ring"></div>
+                        <div class="logo-ring ring-2"></div>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="logo-title">
+                        <span class="letter">G</span>
+                        <span class="letter">D</span>
+                        <span class="letter">G</span>
+                        <span class="space"></span>
+                        <span class="letter">N</span>
+                        <span class="letter">E</span>
+                        <span class="letter">H</span>
+                        <span class="letter">U</span>
+                    </h1>
+                    <p class="logo-subtitle">Google Developer Groups</p>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span class="nav-link-text">Home</span></a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link"><span class="nav-link-text">About</span></a></li>
+                    <li class="nav-item"><a href="events.html" class="nav-link active"><span class="nav-link-text">Events</span></a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link"><span class="nav-link-text">Team</span></a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link"><span class="nav-link-text">Contact</span></a></li>
+                    <li class="nav-item">
+                        <a href="./loginpage/login.html" class="btn-login">
+                            <span class="btn-login-icon"><i class="fas fa-user"></i></span>
+                            <span class="btn-login-text">Login</span>
+                            <span class="btn-login-glow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="page-hero-content">
+            <h1 class="page-title">
+                <span class="word">Our</span>
+                <span class="word gradient-text">Events</span>
+            </h1>
+            <p class="page-subtitle">Join us for workshops, hackathons, and tech talks</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Events</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Filter -->
+    <section class="events-filter">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">
+                <i class="fas fa-th"></i>
+                <span>All Events</span>
+            </button>
+            <button class="filter-btn" data-filter="upcoming">
+                <i class="fas fa-calendar-plus"></i>
+                <span>Upcoming</span>
+            </button>
+            <button class="filter-btn" data-filter="past">
+                <i class="fas fa-history"></i>
+                <span>Past Events</span>
+            </button>
+            <button class="filter-btn" data-filter="workshop">
+                <i class="fas fa-laptop-code"></i>
+                <span>Workshops</span>
+            </button>
+            <button class="filter-btn" data-filter="hackathon">
+                <i class="fas fa-trophy"></i>
+                <span>Hackathons</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section class="events-section">
+        <div class="events-grid">
+            <!-- Event Card 1 -->
+            <div class="event-card" data-category="upcoming workshop">
+                <div class="event-image-wrapper">
+                    <img src="./image/image1.png" alt="Event" class="event-image">
+                    <div class="event-badge upcoming">Upcoming</div>
+                    <div class="event-date-badge">
+                        <span class="date-day">25</span>
+                        <span class="date-month">Feb</span>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <div class="event-meta">
+                        <span class="event-category"><i class="fas fa-laptop-code"></i> Workshop</span>
+                        <span class="event-time"><i class="fas fa-clock"></i> 2:00 PM</span>
+                    </div>
+                    <h3 class="event-title">Android Development Workshop</h3>
+                    <p class="event-description">Learn to build modern Android apps with Kotlin and Jetpack Compose</p>
+                    <div class="event-details">
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NEHU Campus, Hall 3</span>
+                        </div>
+                        <div class="event-attendees">
+                            <i class="fas fa-users"></i>
+                            <span>120+ Registered</span>
+                        </div>
+                    </div>
+                    <a href="#" class="event-btn">
+                        <span>Register Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="event-card" data-category="upcoming hackathon">
+                <div class="event-image-wrapper">
+                    <img src="./image/image2.png" alt="Event" class="event-image">
+                    <div class="event-badge upcoming">Upcoming</div>
+                    <div class="event-date-badge">
+                        <span class="date-day">10</span>
+                        <span class="date-month">Mar</span>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <div class="event-meta">
+                        <span class="event-category"><i class="fas fa-trophy"></i> Hackathon</span>
+                        <span class="event-time"><i class="fas fa-clock"></i> 24 Hours</span>
+                    </div>
+                    <h3 class="event-title">GDG Hackfest 2024</h3>
+                    <p class="event-description">24-hour coding marathon with amazing prizes and mentorship</p>
+                    <div class="event-details">
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NEHU Innovation Lab</span>
+                        </div>
+                        <div class="event-attendees">
+                            <i class="fas fa-users"></i>
+                            <span>50 Teams</span>
+                        </div>
+                    </div>
+                    <a href="#" class="event-btn">
+                        <span>Register Team</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Event Card 3 -->
+            <div class="event-card" data-category="upcoming workshop">
+                <div class="event-image-wrapper">
+                    <img src="./image/image3.png" alt="Event" class="event-image">
+                    <div class="event-badge upcoming">Upcoming</div>
+                    <div class="event-date-badge">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Mar</span>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <div class="event-meta">
+                        <span class="event-category"><i class="fas fa-laptop-code"></i> Workshop</span>
+                        <span class="event-time"><i class="fas fa-clock"></i> 3:00 PM</span>
+                    </div>
+                    <h3 class="event-title">Cloud Computing with GCP</h3>
+                    <p class="event-description">Hands-on session on Google Cloud Platform services and deployment</p>
+                    <div class="event-details">
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Online (Google Meet)</span>
+                        </div>
+                        <div class="event-attendees">
+                            <i class="fas fa-users"></i>
+                            <span>200+ Registered</span>
+                        </div>
+                    </div>
+                    <a href="#" class="event-btn">
+                        <span>Join Online</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Event Card 4 -->
+            <div class="event-card" data-category="past workshop">
+                <div class="event-image-wrapper">
+                    <img src="./image/image4.png" alt="Event" class="event-image">
+                    <div class="event-badge past">Completed</div>
+                    <div class="event-date-badge">
+                        <span class="date-day">20</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <div class="event-meta">
+                        <span class="event-category"><i class="fas fa-laptop-code"></i> Workshop</span>
+                        <span class="event-time"><i class="fas fa-clock"></i> 2:00 PM</span>
+                    </div>
+                    <h3 class="event-title">Web Development Bootcamp</h3>
+                    <p class="event-description">Complete guide to modern web development with React and Node.js</p>
+                    <div class="event-details">
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NEHU Campus, Hall 2</span>
+                        </div>
+                        <div class="event-attendees">
+                            <i class="fas fa-users"></i>
+                            <span>150 Attended</span>
+                        </div>
+                    </div>
+                    <a href="#" class="event-btn">
+                        <span>View Gallery</span>
+                        <i class="fas fa-images"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Event Card 5 -->
+            <div class="event-card" data-category="past hackathon">
+                <div class="event-image-wrapper">
+                    <img src="./image/image1.png" alt="Event" class="event-image">
+                    <div class="event-badge past">Completed</div>
+                    <div class="event-date-badge">
+                        <span class="date-day">05</span>
+                        <span class="date-month">Jan</span>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <div class="event-meta">
+                        <span class="event-category"><i class="fas fa-trophy"></i> Hackathon</span>
+                        <span class="event-time"><i class="fas fa-clock"></i> 36 Hours</span>
+                    </div>
+                    <h3 class="event-title">AI/ML Challenge 2024</h3>
+                    <p class="event-description">Build intelligent solutions using TensorFlow and machine learning</p>
+                    <div class="event-details">
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NEHU Tech Park</span>
+                        </div>
+                        <div class="event-attendees">
+                            <i class="fas fa-users"></i>
+                            <span>40 Teams Participated</span>
+                        </div>
+                    </div>
+                    <a href="#" class="event-btn">
+                        <span>View Results</span>
+                        <i class="fas fa-trophy"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Event Card 6 -->
+            <div class="event-card" data-category="past workshop">
+                <div class="event-image-wrapper">
+                    <img src="./image/image2.png" alt="Event" class="event-image">
+                    <div class="event-badge past">Completed</div>
+                    <div class="event-date-badge">
+                        <span class="date-day">15</span>
+                        <span class="date-month">Dec</span>
+                    </div>
+                </div>
+                <div class="event-content">
+                    <div class="event-meta">
+                        <span class="event-category"><i class="fas fa-laptop-code"></i> Workshop</span>
+                        <span class="event-time"><i class="fas fa-clock"></i> 4:00 PM</span>
+                    </div>
+                    <h3 class="event-title">Flutter Development Masterclass</h3>
+                    <p class="event-description">Create beautiful cross-platform apps with Flutter framework</p>
+                    <div class="event-details">
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NEHU Auditorium</span>
+                        </div>
+                        <div class="event-attendees">
+                            <i class="fas fa-users"></i>
+                            <span>180 Attended</span>
+                        </div>
+                    </div>
+                    <a href="#" class="event-btn">
+                        <span>View Recordings</span>
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <div class="newsletter-icon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <h2>Never Miss an Event</h2>
+            <p>Subscribe to our newsletter and get notified about upcoming events</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn">
+                    <span>Subscribe</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                <div class="footer-logo">
+                    <div class="footer-logo-3d">
+                        <img src="./image/GDG23_IG_Sticker_01_v01.gif" alt="GDG Logo" class="footer-gif">
+                    </div>
+                    <h3>GDG NEHU</h3>
+                    <p>Google Developer Groups, NEHU Shillong</p>
+                    <div class="footer-tagline">Building Tomorrow's Developers Today</div>
+                </div>
+            </div>
+            
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+                    <li><a href="team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" data-social="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="social-tooltip">WhatsApp</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="social-tooltip">Facebook</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-tooltip">Instagram</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="social-tooltip">Twitter</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gdgnehu@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 1234567890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>NEHU, Shillong, Meghalaya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 GDG NEHU. All rights reserved.</p>
+            <p class="footer-credits">Designed with <i class="fas fa-heart"></i> by GDG Community</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+        <span class="btn-tooltip">Back to Top</span>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+</body>
+</html>

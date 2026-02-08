@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG NEHU | Google Developer Groups - Next Gen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Background Particles -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Cursor Trail Effect -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Advanced Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-sphere">
+                <div class="sphere-inner"></div>
+                <div class="sphere-glow"></div>
+            </div>
+            <div class="loader-text">
+                <span class="glitch" data-text="GDG NEHU">GDG NEHU</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Floating Action Menu -->
+    <div class="floating-menu">
+        <div class="floating-menu-toggle">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="floating-menu-items">
+            <a href="#home" class="floating-item" data-tooltip="Home">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="/about.html" class="floating-item" data-tooltip="About">
+                <i class="fas fa-users"></i>
+            </a>
+            <a href="/events.html" class="floating-item" data-tooltip="Events">
+                <i class="fas fa-calendar-alt"></i>
+            </a>
+            <a href="/team.html" class="floating-item" data-tooltip="Team">
+                <i class="fas fa-user-friends"></i>
+            </a>
+            <a href="/contact.html" class="floating-item" data-tooltip="Contact">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="/dashboard.html" class="floating-item" data-tooltip="Contact">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Header with Glass Morphism -->
+    <header class="main-header" id="home">
+        <nav class="nav-section">
+            <div class="logo-container">
+                <div class="logo-3d-wrapper">
+                    <div class="logo-3d">
+                        <img src="./image/gdcLogo.png" alt="GDG NEHU Logo" class="logo-img">
+                        <div class="logo-particles"></div>
+                        <div class="logo-ring"></div>
+                        <div class="logo-ring ring-2"></div>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="logo-title">
+                        <span class="letter">G</span>
+                        <span class="letter">D</span>
+                        <span class="letter">G</span>
+                        <span class="space"></span>
+                        <span class="letter">N</span>
+                        <span class="letter">E</span>
+                        <span class="letter">H</span>
+                        <span class="letter">U</span>
+                    </h1>
+                    <p class="logo-subtitle">Google Developer Groups</p>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">
+                            <span class="nav-link-text">Home</span>
+                            <span class="nav-link-bg"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about.html" class="nav-link">
+                            <span class="nav-link-text">About</span>
+                            <span class="nav-link-bg"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/events.html" class="nav-link">
+                            <span class="nav-link-text">Events</span>
+                            <span class="nav-link-bg"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/team.html" class="nav-link">
+                            <span class="nav-link-text">Team</span>
+                            <span class="nav-link-bg"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/dashboard.html" class="nav-link">
+                            <span class="nav-link-text">Dashboard</span>
+                            <span class="nav-link-bg"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact.html" class="nav-link">
+                            <span class="nav-link-text">Contact</span>
+                            <span class="nav-link-bg"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./loginpage/login.html" class="btn-login">
+                            <span class="btn-login-icon"><i class="fas fa-user"></i></span>
+                            <span class="btn-login-text">Login</span>
+                            <span class="btn-login-glow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 3D Hero Section with Parallax -->
+        <section class="hero-section">
+            <div class="hero-background">
+                <div class="gradient-orb orb-1"></div>
+                <div class="gradient-orb orb-2"></div>
+                <div class="gradient-orb orb-3"></div>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider-wrapper" id="slider">
+                    <!-- Slide 1 -->
+                    <div class="slide active" data-slide="1">
+                        <div class="slide-bg">
+                            <img src="./image/image1.png" alt="GDG Event" class="slide-img">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-label">Welcome to GDG NEHU</div>
+                            <h2 class="slide-title">
+                                <span class="word" data-word="Innovate.">Innovate.</span>
+                                <span class="word" data-word="Create.">Create.</span>
+                                <span class="word" data-word="Collaborate.">Collaborate.</span>
+                            </h2>
+                            <p class="slide-desc">Join the developer community at NEHU</p>
+                            <div class="slide-actions">
+                                <button class="btn-slide btn-primary">
+                                    <span class="btn-text">Join Now</span>
+                                    <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                                    <span class="btn-shimmer"></span>
+                                </button>
+                                <button class="btn-slide btn-secondary">
+                                    <span class="btn-text">Learn More</span>
+                                    <span class="btn-icon"><i class="fas fa-play"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide" data-slide="2">
+                        <div class="slide-bg">
+                            <img src="./image/image2.png" alt="Workshop" class="slide-img">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-label">Expert-Led Sessions</div>
+                            <h2 class="slide-title">
+                                <span class="word" data-word="Hands-on">Hands-on</span>
+                                <span class="word" data-word="Workshops">Workshops</span>
+                            </h2>
+                            <p class="slide-desc">Learn from industry experts and build real projects</p>
+                            <div class="slide-actions">
+                                <button class="btn-slide btn-primary">
+                                    <span class="btn-text">View Events</span>
+                                    <span class="btn-icon"><i class="fas fa-calendar"></i></span>
+                                    <span class="btn-shimmer"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide" data-slide="3">
+                        <div class="slide-bg">
+                            <img src="./image/image3.png" alt="Tech Community" class="slide-img">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-label">Growing Network</div>
+                            <h2 class="slide-title">
+                                <span class="word" data-word="Tech">Tech</span>
+                                <span class="word" data-word="Community">Community</span>
+                            </h2>
+                            <p class="slide-desc">Connect with 500+ developers, designers, and innovators</p>
+                            <div class="slide-actions">
+                                <button class="btn-slide btn-primary">
+                                    <span class="btn-text">Connect Now</span>
+                                    <span class="btn-icon"><i class="fas fa-users"></i></span>
+                                    <span class="btn-shimmer"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide" data-slide="4">
+                        <div class="slide-bg">
+                            <img src="./image/image4.png" alt="Google Technologies" class="slide-img">
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-label">Powered by Google</div>
+                            <h2 class="slide-title">
+                                <span class="word" data-word="Google">Google</span>
+                                <span class="word" data-word="Technologies">Technologies</span>
+                            </h2>
+                            <p class="slide-desc">Master the latest Google developer tools and frameworks</p>
+                            <div class="slide-actions">
+                                <button class="btn-slide btn-primary">
+                                    <span class="btn-text">Explore Tools</span>
+                                    <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+                                    <span class="btn-shimmer"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3D Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="btn-ripple"></span>
+                    </button>
+                    <button class="slider-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="btn-ripple"></span>
+                    </button>
+                </div>
+                
+                <!-- Advanced Slider Indicators -->
+                <div class="slider-indicators">
+                    <div class="indicator active" data-index="0">
+                        <div class="indicator-progress"></div>
+                    </div>
+                    <div class="indicator" data-index="1">
+                        <div class="indicator-progress"></div>
+                    </div>
+                    <div class="indicator" data-index="2">
+                        <div class="indicator-progress"></div>
+                    </div>
+                    <div class="indicator" data-index="3">
+                        <div class="indicator-progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section with 3D Cards -->
+        <section class="about-section" id="about">
+            <div class="section-background">
+                <div class="bg-grid"></div>
+            </div>
+
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">
+                    About <span class="gradient-text">GDG NEHU</span>
+                </h2>
+                <p class="section-subtitle">Empowering Developers, Building Community</p>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card card-3d" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card-shine"></div>
+                    <div class="card-border"></div>
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">To create a collaborative environment where developers can learn, share, and grow together through innovation and technology.</p>
+                    <div class="card-footer">
+                        <a href="#" class="card-link">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-card card-3d" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-shine"></div>
+                    <div class="card-border"></div>
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="card-title">Community</h3>
+                    <p class="card-text">Join 500+ developers, designers, and tech enthusiasts at NEHU. Connect, collaborate, and create amazing projects together.</p>
+                    <div class="card-footer">
+                        <a href="#" class="card-link">
+                            <span>Join Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="about-card card-3d" data-aos="flip-left" data-aos-delay="300">
+                    <div class="card-shine"></div>
+                    <div class="card-border"></div>
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3 class="card-title">Events</h3>
+                    <p class="card-text">Regular workshops, hackathons, and tech talks throughout the year featuring industry experts and hands-on learning.</p>
+                    <div class="card-footer">
+                        <a href="#" class="card-link">
+                            <span>View Events</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section with Animated Counters -->
+        <section class="stats-section" id="events">
+            <div class="stats-overlay"></div>
+            <div class="stats-background">
+                <div class="animated-grid"></div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-count="500">0</div>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <div class="stat-label">Active Members</div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill"></div>
+                    </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-count="50">0</div>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <div class="stat-label">Events Hosted</div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill"></div>
+                    </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-count="100">0</div>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <div class="stat-label">Projects Built</div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill"></div>
+                    </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number-wrapper">
+                        <div class="stat-number" data-count="4">0</div>
+                        <span class="stat-plus">+</span>
+                    </div>
+                    <div class="stat-label">Years of Excellence</div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="tech-section" id="team">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What We Use</span>
+                <h2 class="section-title">
+                    <span class="gradient-text">Technologies</span> We Love
+                </h2>
+                <p class="section-subtitle">Building with the best tools in the industry</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="tech-carousel">
+                <div class="tech-track">
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"></div>
+                    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with 3D Effects -->
+    <footer id="contact">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                <div class="footer-logo">
+                    <div class="footer-logo-3d">
+                        <img src="./image/GDG23_IG_Sticker_01_v01.gif" alt="GDG Logo" class="footer-gif">
+                    </div>
+                    <h3>GDG NEHU</h3>
+                    <p>Google Developer Groups, NEHU Shillong</p>
+                    <div class="footer-tagline">Building Tomorrow's Developers Today</div>
+                </div>
+            </div>
+            
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#events"><i class="fas fa-chevron-right"></i> Events</a></li>
+                    <li><a href="#team"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" data-social="whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="social-tooltip">WhatsApp</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="social-tooltip">Facebook</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-tooltip">Instagram</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-icon" data-social="twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="social-tooltip">Twitter</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gdgnehu@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 1234567890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>NEHU, Shillong, Meghalaya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 GDG NEHU. All rights reserved.</p>
+            <p class="footer-credits">Designed with <i class="fas fa-heart"></i> by GDG Community</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+        <span class="btn-tooltip">Back to Top</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

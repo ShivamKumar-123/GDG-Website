@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - GDG NEHU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 3D Background Particles -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Cursor Trail Effect -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="nav-section">
+            <div class="logo-container">
+                <div class="logo-3d-wrapper">
+                    <div class="logo-3d">
+                        <img src="./image/gdcLogo.png" alt="GDG NEHU Logo" class="logo-img">
+                        <div class="logo-particles"></div>
+                        <div class="logo-ring"></div>
+                        <div class="logo-ring ring-2"></div>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    <h1 class="logo-title">
+                        <span class="letter">G</span>
+                        <span class="letter">D</span>
+                        <span class="letter">G</span>
+                        <span class="space"></span>
+                        <span class="letter">N</span>
+                        <span class="letter">E</span>
+                        <span class="letter">H</span>
+                        <span class="letter">U</span>
+                    </h1>
+                    <p class="logo-subtitle">Google Developer Groups</p>
+                </div>
+            </div>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span class="nav-link-text">Home</span></a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link"><span class="nav-link-text">About</span></a></li>
+                    <li class="nav-item"><a href="events.html" class="nav-link"><span class="nav-link-text">Events</span></a></li>
+                    <li class="nav-item"><a href="team.html" class="nav-link active"><span class="nav-link-text">Team</span></a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link"><span class="nav-link-text">Contact</span></a></li>
+                    <li class="nav-item">
+                        <a href="./loginpage/login.html" class="btn-login">
+                            <span class="btn-login-icon"><i class="fas fa-user"></i></span>
+                            <span class="btn-login-text">Login</span>
+                            <span class="btn-login-glow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="page-hero-content">
+            <h1 class="page-title">
+                <span class="word">Meet Our</span>
+                <span class="word gradient-text">Team</span>
+            </h1>
+            <p class="page-subtitle">Passionate developers building an amazing community</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Team</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="team-section">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Leadership</span>
+            <h2 class="section-title">
+                Core <span class="gradient-text">Team</span>
+            </h2>
+            <p class="section-subtitle">The minds behind GDG NEHU</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="team-grid leadership">
+            <!-- Team Member 1 -->
+            <div class="team-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=12" alt="Team Member" class="member-image">
+                            <div class="member-overlay">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Rajesh Kumar</h3>
+                            <p class="member-role">Lead Organizer</p>
+                            <div class="member-badge">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Rajesh Kumar</h3>
+                            <p class="back-role">Lead Organizer</p>
+                            <p class="back-bio">Passionate about open-source and community building. 5+ years of experience in software development.</p>
+                            <div class="member-stats">
+                                <div class="stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Since 2020</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>20+ Events</span>
+                                </div>
+                            </div>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=5" alt="Team Member" class="member-image">
+                            <div class="member-overlay">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Priya Sharma</h3>
+                            <p class="member-role">Co-Organizer</p>
+                            <div class="member-badge">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Priya Sharma</h3>
+                            <p class="back-role">Co-Organizer</p>
+                            <p class="back-bio">Web development enthusiast and UI/UX designer. Love creating beautiful and functional applications.</p>
+                            <div class="member-stats">
+                                <div class="stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Since 2021</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>15+ Events</span>
+                                </div>
+                            </div>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=33" alt="Team Member" class="member-image">
+                            <div class="member-overlay">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Amit Patel</h3>
+                            <p class="member-role">Technical Lead</p>
+                            <div class="member-badge">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Amit Patel</h3>
+                            <p class="back-role">Technical Lead</p>
+                            <p class="back-bio">Full-stack developer specializing in cloud technologies and DevOps practices.</p>
+                            <div class="member-stats">
+                                <div class="stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Since 2021</span>
+                                </div>
+                                <div class="stat">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>12+ Workshops</span>
+                                </div>
+                            </div>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-stack-overflow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Team Members -->
+    <section class="team-section">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-tag">Volunteers</span>
+            <h2 class="section-title">
+                Core <span class="gradient-text">Members</span>
+            </h2>
+            <p class="section-subtitle">The backbone of our community</p>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="team-grid members">
+            <!-- Member 1 -->
+            <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=15" alt="Team Member" class="member-image">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Sneha Roy</h3>
+                            <p class="member-role">Android Lead</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Sneha Roy</h3>
+                            <p class="back-role">Android Lead</p>
+                            <p class="back-bio">Android developer with expertise in Kotlin and Jetpack Compose.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=68" alt="Team Member" class="member-image">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Arjun Singh</h3>
+                            <p class="member-role">Web Lead</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Arjun Singh</h3>
+                            <p class="back-role">Web Lead</p>
+                            <p class="back-bio">MERN stack developer passionate about building scalable web apps.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=9" alt="Team Member" class="member-image">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Kavya Mehta</h3>
+                            <p class="member-role">ML/AI Lead</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Kavya Mehta</h3>
+                            <p class="back-role">ML/AI Lead</p>
+                            <p class="back-bio">Machine learning enthusiast working on deep learning projects.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="team-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=59" alt="Team Member" class="member-image">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Rohan Das</h3>
+                            <p class="member-role">Cloud Lead</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Rohan Das</h3>
+                            <p class="back-role">Cloud Lead</p>
+                            <p class="back-bio">GCP certified professional helping others learn cloud computing.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 5 -->
+            <div class="team-card" data-aos="zoom-in" data-aos-delay="500">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=20" alt="Team Member" class="member-image">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Ananya Gupta</h3>
+                            <p class="member-role">Content Lead</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Ananya Gupta</h3>
+                            <p class="back-role">Content Lead</p>
+                            <p class="back-bio">Creating engaging content and managing social media presence.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 6 -->
+            <div class="team-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="team-card-inner">
+                    <div class="team-card-front">
+                        <div class="member-image-wrapper">
+                            <div class="member-border"></div>
+                            <img src="https://i.pravatar.cc/300?img=52" alt="Team Member" class="member-image">
+                        </div>
+                        <div class="member-info">
+                            <h3 class="member-name">Vikram Reddy</h3>
+                            <p class="member-role">Design Lead</p>
+                        </div>
+                    </div>
+                    <div class="team-card-back">
+                        <div class="back-content">
+                            <h3>Vikram Reddy</h3>
+                            <p class="back-role">Design Lead</p>
+                            <p class="back-bio">UI/UX designer creating beautiful and intuitive interfaces.</p>
+                            <div class="member-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Team CTA -->
+    <section class="join-team-section">
+        <div class="join-team-content">
+            <div class="join-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h2>Want to Join Our Team?</h2>
+            <p>We're always looking for passionate individuals to join our community</p>
+            <div class="join-benefits">
+                <div class="benefit">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Learn & Grow</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Network</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-trophy"></i>
+                    <span>Lead Events</span>
+                </div>
+            </div>
+            <a href="contact.html" class="join-btn">
+                <span>Apply Now</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-3d">
+                        <img src="./image/GDG23_IG_Sticker_01_v01.gif" alt="GDG Logo" class="footer-gif">
+                    </div>
+                    <h3>GDG NEHU</h3>
+                    <p>Google Developer Groups, NEHU Shillong</p>
+                    <div class="footer-tagline">Building Tomorrow's Developers Today</div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+                    <li><a href="team.html"><i class="fas fa-chevron-right"></i> Our Team</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="social-tooltip">WhatsApp</span>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="social-tooltip">Facebook</span>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                        <span class="social-tooltip">Instagram</span>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="social-tooltip">LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                        <span class="social-tooltip">Twitter</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>gdgnehu@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 1234567890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>NEHU, Shillong, Meghalaya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 GDG NEHU. All rights reserved.</p>
+            <p class="footer-credits">Designed with <i class="fas fa-heart"></i> by GDG Community</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+        <span class="btn-tooltip">Back to Top</span>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="pages.js"></script>
+</body>
+</html>
